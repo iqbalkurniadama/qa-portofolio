@@ -1,5 +1,5 @@
 import React from 'react'
-import { CircularText, CircularTextQA } from './Icons'
+import { CircularTextQA } from './Icons'
 import Link from 'next/link'
 
 const HireMe = () => {

@@ -3,7 +3,7 @@ import Layout from "@/components/Layout";
 import Head from "next/head";
 import Image from "next/image";
 import React, { useEffect, useRef } from "react";
-import profilePic from "../../public/images/profile/developer-pic-2.jpg";
+import profilePic from "../../public/images/profile/image iqbal kurnia dama.jpg";
 import { useInView, useMotionValue, useSpring } from "framer-motion";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
@@ -39,29 +39,24 @@ const about = () => {
   return (
     <>
       <Head>
-        <title>CodeBucks | About Page</title>
+        <title>Iqbal Kurnia | About Page</title>
         <meta name='description' content='any description' />
       </Head>
       <TransitionEffect />
       <main className='flex w-full flex-col items-center justify-center dark:text-light'>
         <Layout className='pt-16'>
-          <AnimatedText text='Passion Fuels Purpose!' className="mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8" />
+          <AnimatedText text='Come on, get to know me more!' className="mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8" />
           <div className='grid w-full grid-cols-8 gap-16 sm:gap-8'>
             <div className='col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8'>
               <h2 className='mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75'>Biography</h2>
               <p className="font-medium">
-                Hi, I'm CodeBucks, a web developer and UI/UX designer with a passion for creating beautiful, functional,
-                and user-centered digital experiences. With 4 years of experience in the field. I am always looking for
-                new and innovative ways to bring my clients visions to life.
+              Hi, I'm Iqbal Kurnia Dama. I am someone with diverse backgrounds, I have experience as a front-end developer who then switched to software quality assurance.
               </p>
-              <p className="my-4 font-medium">
-                I believe that design is about more than just making things look pretty – it's about solving problems
-                and creating intuitive, enjoyable experiences for users.{" "}
+              <p className="my-2 font-medium">
+              While working as a Front-End Developer, I frequently collaborate with the testing team to identify and fix bugs or issues that are found. This experience sparked my interest in looking deeper into the entire software testing process. Up until this point, I had decided to pursue a career in software quality assurance. Therefore, to achieve my goal of becoming a test team fit for the industry, I studied manual and automated testing as well as performance testing. I believe that moving into a Software Quality Assurance role will allow me to continue learning and developing in different contexts, while still leveraging the technical foundations I have built previously.{" "}
               </p>
               <p className="font-medium">
-                Whether I'm working on a website, mobile app, or other digital product, I bring my commitment to design
-                excellence and user-centered thinking to every project I work on. I look forward to the opportunity to
-                bring my skills and passion to your next project.
+              I look forward to making a valuable contribution to ensuring that the products tested not only meet users' expectations but also provide them with satisfaction and trust. 
               </p>
             </div>
 
@@ -72,16 +67,16 @@ const about = () => {
 
             <div className="col-span-2 flex flex-col items-end justify-between xl:col-span-8 xl:flex-row xl:items-center md:order-3">
               <div className="flex flex-col items-end justify-center xl:items-center">
-                <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl"><AnimatedNumbers value={12} />+</span>
-                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm">setisfied clients</h2>
+                <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl"><AnimatedNumbers value={4} />+</span>
+                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-xs">ever worked</h2>
               </div>
               <div className="flex flex-col items-end justify-center xl:items-center">
-                <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl"><AnimatedNumbers value={41} />+</span>
-                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm">project completed</h2>
+                <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl"><AnimatedNumbers value={8} />+</span>
+                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-xs">project completed</h2>
               </div>
               <div className="flex flex-col items-end justify-center xl:items-center">
                 <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl"><AnimatedNumbers value={1} />+</span>
-                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm">years of experience</h2>
+                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-xs">experience</h2>
               </div>
             </div>
           </div>
