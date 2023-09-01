@@ -8,6 +8,7 @@ import React from "react";
 import project1 from "../../public/images/projects/crypto-screener-cover-image.jpg";
 import { motion } from "framer-motion";
 import TransitionEffect from "@/components/TransitionEffect";
+import { dataProjects } from "@/components/data/projects";
 
 const FramerImage = motion(Image);
 
@@ -40,7 +41,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   );
 };
 
-const Project = ({ title, type, img, link, github }) => {
+const Project = ({ title, type, summary, img, link, github }) => {
   return (
     <article className='w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light p-6 relative dark:bg-dark dark:border-light xs:p-4'>
       <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark rounded-br-3xl dark:bg-light md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem]" />
@@ -48,10 +49,11 @@ const Project = ({ title, type, img, link, github }) => {
         <FramerImage src={img} alt={title} className='w-full h-auto' whileHover={{ scale:1.05 }} transition={{ duration:0.2 }} priority sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw' />
       </Link>
       <div className='w-full flex flex-col items-start justify-between mt-4'>
-        <span className='text-primary dark:text-primaryDark font-medium text-2xl lg:text-lg md:text-base'>{type}</span>
+        <span className='text-primary dark:text-primaryDark font-medium text-lg lg:text-lg md:text-base'>{type}</span>
         <Link href={link} target='_blank' className='hover:underline underline-offset-2'>
           <h2 className='my-2 w-full text-left text-3xl font-bold dark:text-light lg:text-2xl'>{title}</h2>
         </Link>
+        <p className='my-2 font-medium text-dark dark:text-light sm:text-sm'>{summary}</p>
         <div className='w-full mt-2 flex items-center justify-between'>
           <Link href={link} target='_blank' className='text-lg font-semibold underline md:text-base'>
             Visit
@@ -69,13 +71,13 @@ const Projects = () => {
   return (
     <>
       <Head>
-        <title>CodeBucks | Projects Page</title>
+        <title>Iqbal Kurnia | Projects Page</title>
         <meta name='description' content='any description' />
       </Head>
       <TransitionEffect />
       <main className='w-full mb-16 flex flex-col items-center justify-center dark:text-light'>
         <Layout className='pt-16'>
-          <AnimatedText text='Imagination Trumps Knowledge!' className='mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8' />
+          <AnimatedText text="let's explore my portfolio further!" className='mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8' />
           <div className='grid grid-cols-12 gap-12 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0'>
             <div className='col-span-12'>
               <FeaturedProject
@@ -89,7 +91,21 @@ const Projects = () => {
                 type='Featured Project'
               />
             </div>
-            <div className='col-span-6 sm:col-span-12'>
+            {dataProjects.map((data, index) => {
+              return (
+                  <div className='col-span-6 sm:col-span-12' key={index}>
+                    <Project
+                      title={data.title}
+                      img={data.img}
+                      summary={data.summary}
+                      link={data.link}
+                      github={data.github}
+                      type={data.type}
+                    />
+                  </div>
+              )
+            })}
+            {/* <div className='col-span-6 sm:col-span-12'>
               <Project
                 title='Api Testing With Cypress'
                 img={project1}
@@ -100,55 +116,7 @@ const Projects = () => {
                 github='/'
                 type='Api Testing'
               />
-            </div>
-            <div className='col-span-6 sm:col-span-12'>
-              <Project
-                title='Api Testing With Cypress'
-                img={project1}
-                summary='A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                local currency.'
-                link='/'
-                github='/'
-                type='Api Testing'
-              />
-            </div>
-            <div className='col-span-12'>
-              <FeaturedProject
-                title='Project-1'
-                img={project1}
-                summary='A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                local currency.'
-                link='/'
-                github='/'
-                type='Featured Project'
-              />
-            </div>
-            <div className='col-span-6 sm:col-span-12'>
-              <Project
-                title='Api Testing With Cypress'
-                img={project1}
-                summary='A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                local currency.'
-                link='/'
-                github='/'
-                type='Api Testing'
-              />
-            </div>
-            <div className='col-span-6 sm:col-span-12'>
-              <Project
-                title='Api Testing With Cypress'
-                img={project1}
-                summary='A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                local currency.'
-                link='/'
-                github='/'
-                type='Api Testing'
-              />
-            </div>
+            </div> */}
           </div>
         </Layout>
       </main>
