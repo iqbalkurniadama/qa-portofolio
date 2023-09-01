@@ -1,12 +1,12 @@
 import image1 from "../../../public/images/projects/cypress-be-testing-mochaawesome.png" 
 import image2 from "../../../public/images/projects/typescript-cypress-ui-testing.png" 
-import image3 from "../../../public/images/projects/appium testing diet meal.png" 
-import image4 from "../../../public/images/projects/selenium orangeHRM.png" 
-import image5 from "../../../public/images/projects/selenium testing kasirAja with cucumber.png" 
-import image6 from "../../../public/images/projects/testing api kasir aja.png" 
-import image7 from "../../../public/images/projects/k6 perfomance testing.png" 
+import image3 from "../../../public/images/projects/appium-testing-diet-meal.png" 
+import image4 from "../../../public/images/projects/selenium-orangeHRM.png" 
+import image5 from "../../../public/images/projects/selenium-testing-kasirAja-with-cucumber.png" 
+import image6 from "../../../public/images/projects/testing-api-kasirAja.png" 
+import image7 from "../../../public/images/projects/k6-perfomance-testing.png" 
 import image8 from "../../../public/images/projects/dummy-rest-api-testing-postman.png" 
-import image9 from "../../../public/images/projects/bug reporting.png" 
+import image9 from "../../../public/images/projects/bug-reporting.png" 
 import image10 from "../../../public/images/projects/test-cases-evermos.png" 
 
 export const dataProjects = [

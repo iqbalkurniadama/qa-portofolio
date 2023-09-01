@@ -5,7 +5,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import project1 from "../../public/images/projects/crypto-screener-cover-image.jpg";
+// import project1 from "../../public/images/projects/crypto-screener-cover-image.jpg";
 import { motion } from "framer-motion";
 import TransitionEffect from "@/components/TransitionEffect";
 import { dataProjects } from "@/components/data/projects";
@@ -79,7 +79,7 @@ const Projects = () => {
         <Layout className='pt-16'>
           <AnimatedText text="let's explore my portfolio further!" className='mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8' />
           <div className='grid grid-cols-12 gap-12 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0'>
-            <div className='col-span-12'>
+            {/* <div className='col-span-12'>
               <FeaturedProject
                 title='Project-1'
                 img={project1}
@@ -90,7 +90,7 @@ const Projects = () => {
                 github='/'
                 type='Featured Project'
               />
-            </div>
+            </div> */}
             {dataProjects.map((data, index) => {
               return (
                   <div className='col-span-6 sm:col-span-12' key={index}>
