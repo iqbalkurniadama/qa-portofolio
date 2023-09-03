@@ -33,7 +33,7 @@ export const dataProjects = [
       title: "Appium testing",
       type: "Automation testing",
       img: image3,
-      summary: "Creating mobile testing using Appium with JavaScript language and the WebDriverIo framework. In the github link there is code and test cases",
+      summary: "Created mobile tests using Appium with WebDriverIo framework. In the github link there is code and test cases",
       link: "https://github.com/iqbalkurniadama/appium-mobile-automation-testing",
       github: "https://github.com/iqbalkurniadama/appium-mobile-automation-testing"
   },
@@ -66,7 +66,7 @@ export const dataProjects = [
   },
   {
       id: 7,
-      title: "performance testing with K6",
+      title: "K6 performance testing",
       type: "Performance testing",
       img: image7,
       summary: "Creating performance testing using k6. In GitHub there is code and test reports",

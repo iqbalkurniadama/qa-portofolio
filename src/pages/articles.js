@@ -4,8 +4,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import React, { useRef } from 'react'
-import article1 from '../../public/images/articles/pagination component in reactjs.jpg'
-import article2 from '../../public/images/articles/smooth scrolling in reactjs.png'
+import article1 from '../../public/images/articles/type-of-testing.png'
 import { motion, useMotionValue } from 'framer-motion'
 import TransitionEffect from '@/components/TransitionEffect'
 
@@ -60,7 +59,7 @@ const Article = ({img, title, date, link}) => {
   )
 }
 
-const FeaturedArticle =({img, title, time, summary, link}) => {
+const FeaturedArticle =({img, title, date, summary, link}) => {
   return (
     <li className='relative col-span-1 w-full p-4 bg-light border border-solid border-dark rounded-2xl dark:bg-dark dark:border-light'>
       <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark rounded-br-3xl dark:bg-light " />
@@ -71,7 +70,7 @@ const FeaturedArticle =({img, title, time, summary, link}) => {
         <h2 className='capitalize text-2xl font-bold my-2 mt-4 hover:underline xs:text-lg'>{title}</h2>
       </Link>
       <p className='text-sm mb-2'>{summary}</p>
-      <span className='text-primary font-semibold dark:text-primaryDark'>{time}</span>
+      <span className='text-primary font-semibold dark:text-primaryDark'>{date}</span>
     </li>
   )
 }
@@ -80,37 +79,36 @@ const Articles = () => {
   return (
     <>
       <Head>
-        <title>CodeBucks | Articles Page</title>
+        <title>Iqbal Kurnia | Articles Page</title>
         <meta name='description' content='any description' />
       </Head>
       <TransitionEffect />
       <main className='w-full mb-16 flex flex-col items-center justify-center overflow-hidden dark:text-light'>
         <Layout className='pt-16'>
-          <AnimatedText text='Words Can Change The World!' className='mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8' />
+          <AnimatedText text='increase your insight by reading!' className='mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8' />
           <ul className='grid grid-cols-2 gap-16 lg:gap-8 md:grid-cols-1 md:gap-y-16'>
             <FeaturedArticle
+              title="Jenis Testing Dalam Software Quality Assurance"
+              summary="Belajar mengenai jenis-jenis testing dalam Software Quality Assurance yang sering digunakan."
+              date="3 September 2023"
+              link="https://medium.com/@iqbalkurnia725/jenis-testing-dalam-software-quality-assurance-b595f32e89e6"
+              img={article1}
+            />
+            {/* <FeaturedArticle
               title="Build A Custom Pagination Component In Reactjs From Scratch"
               summary="Learn how to build a custom pagination component in ReactJS from scratch. 
               Follow this step-by-step guide to integrate Pagination component in your ReactJS project."
               time="9 min read"
               link="/"
               img={article1}
-            />
-            <FeaturedArticle
-              title="Build A Custom Pagination Component In Reactjs From Scratch"
-              summary="Learn how to build a custom pagination component in ReactJS from scratch. 
-              Follow this step-by-step guide to integrate Pagination component in your ReactJS project."
-              time="9 min read"
-              link="/"
-              img={article1}
-            />
+            /> */}
           </ul>
-          <h2 className='font-bold text-4xl w-full text-center my-16 mt-32'>All Articles</h2>
+          {/* <h2 className='font-bold text-4xl w-full text-center my-16 mt-32'>All Articles</h2>
           <ul>
             <Article
-              title="Build A Custom Pagination Component In Reactjs From Scratch"
-              date="29 Maret 2023"
-              link="/"
+              title=""
+              date="03 September 2023"
+              link="https://medium.com/@iqbalkurnia725/jenis-testing-dalam-software-quality-assurance-b595f32e89e6"
               img={article2}
             />
             <Article
@@ -125,7 +123,7 @@ const Articles = () => {
               link="/"
               img={article2}
             />
-          </ul>
+          </ul> */}
         </Layout>
       </main>
     </>
