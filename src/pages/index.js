@@ -30,7 +30,7 @@ export default function Home() {
               <AnimatedText text="A good tester is a detective, not a robot." className='!text-5xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl' />
               <p className='my-4 text-sm font-medium'>As Software quality assurance, I am responsible for ensuring that the products or applications that I test meet the set quality standards. I conduct thorough testing and monitoring of each product to identify potential defects. Explore my recent project which showcases my expertise in quality assurance.</p>
             <div className='flex items-center self-start mt-2 lg:self-center'>
-              <Link href="/public/cv-webprofile.pdf" download={true} target={"_blank"} className='flex items-center bg-dark text-light dark:bg-light dark:text-dark p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light border-2 border-solid border-transparent hover:border-dark'>Resume <LinkArrow className={'w-6 ml-1'} /></Link>
+              <Link href="/CV-Iqbal_kurnia_dama.pdf" download={true} target={"_blank"} className='flex items-center bg-dark text-light dark:bg-light dark:text-dark p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light border-2 border-solid border-transparent hover:border-dark'>Resume <LinkArrow className={'w-6 ml-1'} /></Link>
               <Link href={"mailto:iqbalkurnia23@gmail.com"} target={"_blank"} className='ml-4 text-lg font-medium capitalize text-dark dark:text-light underline'>Contact</Link>
             </div>
             </div>
