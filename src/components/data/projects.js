@@ -8,6 +8,8 @@ import image7 from "../../../public/images/projects/k6-perfomance-testing.png"
 import image8 from "../../../public/images/projects/dummy-rest-api-testing-postman.png" 
 import image9 from "../../../public/images/projects/bug-reporting.png" 
 import image10 from "../../../public/images/projects/test-cases-evermos.png" 
+import image11 from "../../../public/images/projects/katalon_testingLogin.png" 
+import image12 from "../../../public/images/projects/katalon_mobileTesting_kasirAja.png" 
 
 export const dataProjects = [
   {
@@ -84,7 +86,7 @@ export const dataProjects = [
   },
   {
       id: 9,
-      title: "Bug Reporting KasirAja",
+      title: "Bug reporting kasirAja",
       type: "Manual testing",
       img: image9,
       summary: "Create a bug report using the KasirAja website.",
@@ -99,6 +101,24 @@ export const dataProjects = [
       summary: "Creating test cases using the Evermos website.",
       link: "https://docs.google.com/spreadsheets/d/1uBgtPe3vd51F4CP_7-vSA1DWKeNsLxBS3f80p9Ef0GU/edit#gid=0",
       github: "https://docs.google.com/spreadsheets/d/1uBgtPe3vd51F4CP_7-vSA1DWKeNsLxBS3f80p9Ef0GU/edit#gid=0"
+  },
+  {
+      id: 11,
+      title: "Web testing with katalon studio",
+      type: "Automation Testing",
+      img: image11,
+      summary: "Create web testing with login case studies at Katalon Studio",
+      link: "https://github.com/iqbalkurniadama/katalon_ui_automation",
+      github: "https://github.com/iqbalkurniadama/katalon_ui_automation"
+  },
+  {
+      id: 12,
+      title: "Mobile testing with katalon studio",
+      type: "Automation Testing",
+      img: image12,
+      summary: "Create mobile testing with a case study of KasirAja login at Katalon Studio",
+      link: "https://github.com/iqbalkurniadama/katalon_mobileAutomation",
+      github: "https://github.com/iqbalkurniadama/katalon_mobileAutomation"
   },
 
 ]
