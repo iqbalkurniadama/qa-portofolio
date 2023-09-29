@@ -54,8 +54,8 @@ export const dataProjects = [
       type: "Automation testing",
       img: image5,
       summary: "Creating web testing using Selenium using the webdriverIo and cucumber frameworks. On github there is code and test cases",
-      link: "https://github.com/iqbalkurniadama/ui-automation-kasirAja-with-Cypress",
-      github: "https://github.com/iqbalkurniadama/ui-automation-kasirAja-with-Cypress"
+      link: "https://github.com/iqbalkurniadama/ui-testing-with-cucumber-webdriverIo",
+      github: "https://github.com/iqbalkurniadama/ui-testing-with-cucumber-webdriverIo"
   },
   {
       id: 6,
